@@ -1,6 +1,6 @@
 {
-  "name": "Jarsekai",
-  "version": "1.4.0",
+  "name": "pharouk",
+  "version": "1.0.0",
   "description": "Jarsekai base script by Jarsépay",
   "main": "index.js",
   "type": "module",
