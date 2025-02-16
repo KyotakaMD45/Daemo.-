@@ -140,7 +140,7 @@ const connectionOptions = {
         level: 'fatal'
     }),
     auth: state,
-    browser: ['Linux', 'Chrome', 'pharouk'],
+    browser: ['Linux', 'Chrome', ''],
     version,
     getMessage: async (key) => {
         let jid = jidNormalizedUser(key.remoteJid)
