@@ -644,7 +644,7 @@ let msg = {
       text: msg, 
       contextInfo: {
       externalAdReply: {
-      title: 'A C C E S S - D E N I E D',
+      title: '',
       body: info.wm,
       thumbnailUrl: url.akses,
       sourceUrl: url.sid,
