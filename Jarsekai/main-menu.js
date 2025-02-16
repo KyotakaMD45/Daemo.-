@@ -11,8 +11,6 @@ let tags = {
 }
 const defaultMenu = {
 	before: `
-👋 %ucapan %taguser
-%readmore
 `.trimStart(),
 	header: '`%category`',
 	body: '> %cmd %islimit %isPremium',
@@ -202,19 +200,19 @@ function clockString(ms) {
 
 function ucapan() {
 	const hour_now = moment.tz('Asia/Jakarta').format('HH')
-	var ucapanWaktu = 'Selamat pagi'
+	var ucapanWaktu = ''
 	if (hour_now >= '03' && hour_now <= '10') {
-		ucapanWaktu = 'Selamat pagi'
+		ucapanWaktu = ''
 	} else if (hour_now >= '10' && hour_now <= '15') {
-		ucapanWaktu = 'Selamat siang'
+		ucapanWaktu = ''
 	} else if (hour_now >= '15' && hour_now <= '17') {
-		ucapanWaktu = 'Selamat sore'
+		ucapanWaktu = ''
 	} else if (hour_now >= '17' && hour_now <= '18') {
-		ucapanWaktu = 'Selamat sore'
+		ucapanWaktu = ''
 	} else if (hour_now >= '18' && hour_now <= '23') {
-		ucapanWaktu = 'Selamat malam'
+		ucapanWaktu = ''
 	} else {
-		ucapanWaktu = 'Selamat malam'
+		ucapanWaktu = ''
 	}
 	return ucapanWaktu
 }
