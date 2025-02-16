@@ -165,4 +165,4 @@ function getTotalFoldersAndFiles(folderPath) {
     })
 }
 
-start('jarsekai.js')
+start('pharouk.js')
