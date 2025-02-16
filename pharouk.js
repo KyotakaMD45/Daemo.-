@@ -337,7 +337,7 @@ global.reloadHandler = async function(restatConn) {
     return true
 }
 
-const pluginFolder = global.__dirname(join(__dirname, './pharouk/index'))
+const pluginFolder = global.__dirname(join(__dirname, './Jarsekai/index'))
 const pluginFilter = (filename) => /\.js$/.test(filename)
 global.jarspy = {}
 async function filesInit() {
