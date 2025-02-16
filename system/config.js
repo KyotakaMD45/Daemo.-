@@ -3,66 +3,61 @@ import fs from 'fs'
 import chalk from 'chalk'
 import { fileURLToPath } from 'url'
 
-// Setting
+// Paramètres  
 global.setting = {
     autoclear: false,
     addReply: true
 }
 
-// Owner
+// Propriétaire  
 global.owner = [
-    ['6282148864989', 'Jarsépay', true]
+    ['6282148864989', 'Propriétaire', true]
 ]
 
-// Info
+// Informations  
 global.info = {
-    namaowner: 'Jarsépay',
-    nomorowner: '6282148864989',
-    packname: 'Sticker by ',
-    author: 'Jarsépay',
     namabot: 'Jarsekai',
     wm: 'I M  J A R S E K A I',
-    stickpack: 'Created by',
-    stickauth: 'Jarsépay'
+    packname: 'Sticker by ',
+    stickpack: 'Créé par'
 }
 
-// Thumbnail 
+// Vignettes  
 global.url = {
-    profil: 'https://i.ibb.co/3Fh9V6p/avatar-contact.png',
-    thumb: 'https://tinyurl.com/24gmscjn',
-    logo: 'https://tinyurl.com/29g5avab',
-    akses: 'https://telegra.ph/file/6c7b9ffbdfb0096e1db3e.jpg',
-    welcomes: 'https://telegra.ph/file/1a5df6c2eb53d24d4254c.jpg',
-    lefts: 'https://telegra.ph/file/74abb87ac6082571db546.jpg',
-    sig: 'https://instagram.com/jarsepay',
-    sgh: 'https://github.com/jarsepay',
-    sgc: 'https://chat.whatsapp.com/LGrtCe82EpbKvxYohoRxKn',
-    sdc: 'https://s.id/aeonnixity',
-    sid: 'https://s.id/jarsekai'
+    profil: '',
+    thumb: '',
+    logo: '',
+    akses: '',
+    welcomes: '',
+    lefts: '',
+    sig: '',
+    sgh: '',
+    sgc: '',
+    sdc: '',
+    sid: ''
 }
 
-// Message
+// Messages  
 global.msg = {
-    wait: 'Sedang menjalankan perintah...',
-    error: 'Terjadi error, harap melapor ke owner melalui */report*.'
+    wait: 'Veuillez patienter...',
+    error: 'Une erreur est survenue, veuillez contacter le propriétaire via */report*.'
 }
 
-// Apikey
+// Clés API  
 global.api = {
     lol: 'GataDios'
-
 }
 
 global.APIKeys = {
     "https://api.lolhumaan.xyz": "GataDios"
 }
 
-// API
+// API  
 global.APIs = {
     lol: "https://api.lolhumaan.xyz"
 }
 
-// RPG & Levelling
+// RPG & Niveau  
 global.multiplier = 50
 global.rpg = {
     emoticon(string) {
@@ -84,6 +79,6 @@ global.rpg = {
 let file = fileURLToPath(import.meta.url)
 watchFile(file, () => {
     unwatchFile(file)
-    console.log(chalk.redBright("Update 'config.js'"))
+    console.log(chalk.redBright("Mise à jour de 'config.js'"))
     import(`${file}?update=${Date.now()}`)
 })
