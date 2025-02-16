@@ -265,7 +265,7 @@ async function connectionUpdate(update) {
         console.log(chalk.bgGreen(chalk.black(`💃 ${info.namabot} telah aktif`)))
     }
     if (connection == 'close') {
-        console.log(chalk.yellow(`Koneksi bot terputus! Sedang menyambungkan ulang...`))
+        console.log(chalk.yellow(`Connexion du bot perdue !  Se reconnecte...`))
     }
 }
 
@@ -337,7 +337,7 @@ global.reloadHandler = async function(restatConn) {
     return true
 }
 
-const pluginFolder = global.__dirname(join(__dirname, './Jarsekai/index'))
+const pluginFolder = global.__dirname(join(__dirname, './pharouk/index'))
 const pluginFilter = (filename) => /\.js$/.test(filename)
 global.jarspy = {}
 async function filesInit() {
@@ -363,7 +363,7 @@ global.reload = async (_ev, filename) => {
                 conn.logger.warn(`Plugin Dihapus - '${filename}'`)
                 return delete global.jarspy[filename]
             }
-        } else conn.logger.info(`Plugin Baru - '${filename}'`)
+        } else conn.logger.info(`Plugin new- '${filename}'`)
         const err = syntaxerror(readFileSync(dir), filename, {
             sourceType: 'module',
             allowAwaitOutsideFunction: true,
@@ -424,7 +424,7 @@ if (setting.autoclear) {
         if (stopped === 'close' || !conn || !conn.user) return
         await deleteFilesExceptOne(directory, 'creds.json')
         await clearTmp()
-        conn.reply(info.nomorowner + '@s.whatsapp.net', 'Sesi telah dibersihkan.', null) >
+        conn.reply(info.nomorowner + '@s.whatsapp.net', 'la session a été effacée', null) >
             console.log(chalk.cyanBright(
                 `\n╭───────────────────·»\n│\n` +
                 `│  Sessions cleared Successfully \n│\n` +
