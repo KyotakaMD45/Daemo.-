@@ -5,7 +5,7 @@ let jarsepay = async (m, { conn }) => {
     let neww = performance.now()
     let speed = Math.floor(neww - old)
 
-    m.reply(`*🏓 Pong!* Latency is *${speed}ms*`)
+    m.reply(`> Pong!${speed}ms*`)
 }
 
 jarsepay.help = ['ping']
