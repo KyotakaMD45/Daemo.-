@@ -11,14 +11,14 @@ global.setting = {
 
 // Propriétaire  
 global.owner = [
-    ['6282148864989', 'Propriétaire', true]
+    ['2250575130788', 'Propriétaire', true]
 ]
 
 // Informations  
 global.info = {
-    namabot: 'Jarsekai',
-    wm: 'I M  J A R S E K A I',
-    packname: 'Sticker by ',
+    namabot: 'Hiden-md',
+    wm: 'pharouk',
+    packname: ' 🟢',
     stickpack: 'Créé par'
 }
 
