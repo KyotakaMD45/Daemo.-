@@ -7,12 +7,12 @@ import axios from 'axios'
 let jarsepay = m => m
 jarsepay.all = async function(m) {
 	let name = await conn.getName(m.sender)
-	let pp = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
+	let pp = ''
 	try {
 		pp = await this.profilePictureUrl(m.sender, 'image')
 	} catch (e) {} finally {
 
-		global.idchannel = '120363239929948380@newsletter'
+		global.idchannel = ''
 		global.doc = pickRandom(['application/vnd.ms-excel', 'application/vnd.openxmlformats-officedocument.presentationml.presentation', 'application/msword', 'application/pdf'])
 		global.fsizedoc = pickRandom([2000, 3000, 2023000, 2024000])
 
