@@ -140,7 +140,7 @@ const connectionOptions = {
         level: 'fatal'
     }),
     auth: state,
-    browser: ['Linux', 'Chrome', ''],
+    browser: ['Linux', 'Chrome', 'pharouk'],
     version,
     getMessage: async (key) => {
         let jid = jidNormalizedUser(key.remoteJid)
@@ -166,7 +166,7 @@ async function handlePairingCode(conn) {
     try {
         if (global.pairingCode && !conn.authState.creds.registered) {
             console.log(chalk.whiteBright('› To use the Pairing Code, please enter your WhatsApp number.'))
-            console.log(chalk.whiteBright('› Example: 628123456789'))
+            console.log(chalk.whiteBright('› Example: 225xxxxxxxxxx'))
             
             const phoneNumber = await question(chalk.bgGreen(chalk.black(`\nYour WhatsApp Number: `)))
             const cleanPhoneNumber = phoneNumber.replace(/\D/g,'')
@@ -427,7 +427,7 @@ if (setting.autoclear) {
         conn.reply(info.nomorowner + '@s.whatsapp.net', 'la session a été effacée', null) >
             console.log(chalk.cyanBright(
                 `\n╭───────────────────·»\n│\n` +
-                `│  Sessions cleared Successfully \n│\n` +
+                `│  Sessions effacées avec succès \n│\n` +
                 `╰───❲ ${global.namebot} ❳\n`
             ))
     }, 120 * 60 * 1000)
