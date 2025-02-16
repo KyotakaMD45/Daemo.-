@@ -190,7 +190,7 @@ async function handlePairingCode(conn) {
     try {
         if (global.pairingCode && !conn.authState.creds.registered) {
             console.log(chalk.whiteBright('› Pour utiliser le code d’appairage, veuillez entrer votre numéro WhatsApp.'))
-            console.log(chalk.whiteBright('› Exemple : 628123456789'))
+            console.log(chalk.whiteBright('› Exemple : 225......'))
             
             const phoneNumber = await question(chalk.bgGreen(chalk.black(`\nVotre numéro WhatsApp : `)))
             const cleanPhoneNumber = phoneNumber.replace(/\D/g, '')
