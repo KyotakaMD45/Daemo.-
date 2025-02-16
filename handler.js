@@ -656,18 +656,18 @@ let msg = {
 
 function ucapan() {
   const time = moment.tz('Asia/Jakarta').format('HH')
-  let res = "Selamat malam 🌙"
+  let res = ""
   if (time >= 4) {
-    res = "Selamat Pagi 🌄"
+    res = ""
   }
   if (time >= 10) {
-    res = "Selamat Siang ☀️"
+    res = ""
   }
   if (time >= 15) {
-    res = "Selamat Sore 🌇"
+    res = ""
   }
   if (time >= 18) {
-    res = "Selamat Malam 🌙"
+    res = ""
   }
   return res
 }
