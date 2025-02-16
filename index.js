@@ -31,7 +31,7 @@ const time = tz('Asia/Jakarta').format('HH:mm:ss')
 const currentFilePath = new URL(import.meta.url).pathname
 const __dirname = dirname(fileURLToPath(import.meta.url))
 
-let bot_ku = 'Jarsekai'
+let bot_ku = 'pharouk'
 say(bot_ku, {
     font: 'simpleBlock',
     align: 'center',
@@ -49,7 +49,7 @@ app.listen(port, () => {
 const folderPath = './tmp'
 if (!fs.existsSync(folderPath)) {
     fs.mkdirSync(folderPath)
-    console.log(chalk.green('Folder tmp berhasil dibuat.'))
+    console.log(chalk.green('dossier tmp créé avec succès.'))
 }
 
 let isRunning = false
@@ -65,7 +65,7 @@ async function start(file) {
         stdio: ['inherit', 'inherit', 'inherit', 'ipc'],
     })
     p.on("message", data => {
-        console.log(chalk.magenta("[ ✅ Diterima ]", data))
+        console.log(chalk.magenta("[ ✅ Accepté]", data))
         switch (data) {
             case "reset":
                 p.process.kill()
@@ -131,10 +131,10 @@ async function start(file) {
 
 ❲ ${chalk.bgCyan(chalk.black('Informasi Lain'))} ❳
 • Total Plugins: ${chalk.white(totalFoldersAndFiles.files)} File
-• Creator Script: ${chalk.bold.cyan('Jarsépay')}`)
+• Creator Script: ${chalk.bold.cyan('pharouk🟢')}`)
 
     } catch (err) {
-        console.error(chalk.red(`Tidak dapat membaca package.json: ${err}`))
+        console.error(chalk.red(`Impossible de lire package.json: ${err}`))
     }
 
     setInterval(() => {}, 1000)
